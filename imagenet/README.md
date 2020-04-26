@@ -7,8 +7,10 @@
 2. prepare validation set
 
   ```sh
-  mkdir img_val_extracted/
-  cd img_val_extracted/
-  tar -xvf ../ILSVRC2012_img_val.tar
-  wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh | bash
+  mkdir img_val_extracted/val
+  cd img_val_extracted/val
+  tar -xvf ../../ILSVRC2012_img_val.tar
+  # wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh | bash
+  bash ../../valprep.sh
   ```
+
